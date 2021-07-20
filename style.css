@@ -1,4 +1,3 @@
-/* ROBOT.GIF from Giphy - https://giphy.com/gifs/robot-cinema-4d-eyedesyn-3o7abtn7DuREEpsyWY */
 
 html {
   box-sizing: border-box;
@@ -6,20 +5,41 @@ html {
 
 body{
 margin:0;
-background: #45badd;
+opacity: 0.8;
+background-size: 24px 24px;
+background-image:  repeating-linear-gradient(0deg, #54a7ae, #54a7ae 1.2000000000000002px, #e5e5f7 1.2000000000000002px, #e5e5f7);
 }
 
 .container{
+  margin-top: 150px;
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  background: url('./robot.gif');
   background-size: contain;
   background-position: left center;
   background-repeat: no-repeat;
+}
+
+.joke-container{
+  margin: 30px;
+  width: fit-content;
+  block-size: fit-content;
+  font-size: 25px;
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(243, 235, 235);
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(99, 115, 150, 0.877);
+  border-radius: 0%;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+}
+
+#jokes{
+  margin: 15px;
+  
 }
 
 button{
@@ -27,13 +47,14 @@ button{
   outline: none;
   width: 200px;
   height: 80px;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Permanent Marker', cursive;
   font-size: 20px;
   color: white;
-  background: #ff3482;
+  background: #192222;
   border: none;
   border-radius: 5px;
   box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.2);
+  margin:10px;
 }
 
 button:hover{
